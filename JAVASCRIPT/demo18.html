@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>JAVASCRIPT</title>
+    <script>
+        //arrays
+        document.writeln("<h3 align=center><u>Demo on Arrays</u><br/></h3>")
+        const s=[34,67,89]//same type of elements
+        document.writeln("<h3 align=center>"+typeof(s)+"<br/></h3>")//object
+        document.writeln("<h3 align=center>"+s+"<br/></h3>")//34,67,89
+        document.writeln("<h3 align=center>"+s.length+"<br/></h3>")//3
+        document.writeln("<h3 align=center>"+s[0]+"<br/></h3>")//34
+        document.writeln("<h3 align=center>"+s[1]+"<br/></h3>")//67
+        document.writeln("<h3 align=center>"+s[2]+"<br/></h3>")//89
+        document.writeln("<h3 align=center>"+s[5]+"<br/></h3>")//undefined
+        document.writeln("<h3 align=center>"+typeof(s[1])+"<br/></h3>")//number
+        s[1]=50
+        s[2]="CSE"
+        s[0]=34
+        document.writeln("<h3 align=center>"+s+"<br/></h3>")//Bhaviri Somsekhar,2200090165,csit
+        s.push("MSWD")
+        s.push(100)//push is to insert the value to the array at last
+        document.writeln("<h3 align=center>"+s+"<br/></h3>")
+        document.writeln("<h3 align=center>"+s.length+"<br/></h3>")
+        s.pop()//pop the last inserted one from the array
+        s.reverse()//reverse the array
+        document.writeln("<h3 align=center>"+s+"<br/></h3>")
+        document.writeln("<h3 align=center>"+s.length+"<br/></h3>")//returns length
+        document.writeln("<h3 align=center>"+s.sort()+"<br/></h3>")//sort the array values
+        let element=s.shift()//return and remove the first element
+        document.writeln("<h3 align=center>"+element+"<br/></h3>")//using shift operator the removed element
+        document.writeln("<h3 align=center>After shifthing ="+s+"<br/></h3>")
+        let len=s.unshift(100.5)//add the value at the starting of array
+        document.writeln("<h3 align=center>"+len+"<br/></h3>")
+        document.writeln("<h3 align=center>After Unshifthing ="+s+"<br/></h3>")
+        let len1=s.unshift("AWS",31,"PFSD")
+        document.writeln("<h3 align=center>"+len1+"<br/></h3>")
+        document.writeln("<h3 align=center>After Unshifthing ="+s+"<br/></h3>")
+        document.writeln("<h3 align=center><u>DISPLAY ARRAY ELEMENTS USING FOR LOOP</u><br/></h3>")
+        for(let i=0;i<s.length;i++){
+            document.writeln("<h3 align=center>"+s[i]+"<br/></h3>")
+        }
+        document.writeln("<h3 align=center><u>DISPLAY ARRAY ELEMENTS USING FOR IN LOOP</u><br/></h3>")
+        for(let i in s){
+            document.writeln("<h3 align=center>"+s[i]+"<br/></h3>")
+        }
+        document.writeln("<h3 align=center><u>DISPLAY ARRAY ELEMENTS USING FOR OF LOOP</u><br/></h3>")
+        for(let element of s){
+            document.writeln("<h3 align=center>"+element+"<br/></h3>")
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+   
+    <title>JAVASCRIPT</title>
+    <script>
+        //template literal
+        //(``)backtick
+        const name="klef"
+        document.writeln(`<h3 align='center'><b>Hi ${name}</b></br></h3>`)
+        //spread opreator object as iterable and merge two arrays
+        const a=[10,23,45,56]
+        const b=[30,40,...a]
+        document.writeln("<h3 align='center'><b>a ="+a+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>b ="+b+"</b></br></h3>")
+        const x=[12,13,45,57]
+        const y=[56,23,90,34]
+        const z=[...x,...y]//for merging two arrays
+        document.writeln("<h3 align='center'><b>x ="+x+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>y ="+y+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>z ="+z+"</b></br></h3>")
+        const v1="kluniversity"
+        const v2=[...v1]
+        document.writeln("<h3 align='center'><b>v1 ="+v1+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>v2 ="+v2+"</b></br></h3>")
+        //destructuring assignment extracting individual elements from exact array
+        const names = [10,"mswd","sdp",20]
+        const[i,j,k,l]=names //each value assigned to i,j,k,l in names
+        document.writeln("<h3 align='center'><b>names ="+names+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>length ="+names.length+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>"+i+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>"+j+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>"+k+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>"+l+"</b></br></h3>")
+
+        const [p,q]=names
+        document.writeln("<h3 align='center'><b>"+p+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>"+q+"</b></br></h3>")
+        const [m,,,g]=names//it skips the spaced 
+        document.writeln("<h3 align='center'><b>"+m+"</b></br></h3>")
+        document.writeln("<h3 align='center'><b>"+g+"</b></br></h3>")
+
+    </script>
+</head>
+<body>
+</body>
+</html>

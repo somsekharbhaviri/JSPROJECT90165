@@ -1,0 +1,33 @@
+<html>
+<head>
+   
+    <title>JAVASCRIPT</title>
+    <script>
+        //declaration of an array using new keyword
+        let arr=new Array()//size is optional
+        const n=parseInt(prompt("enter array size",1))
+        alert("Reading Array Elements")
+        for(let i=0;i<n;i++){
+            arr[i]=parseInt(prompt("enter "+(i+1)+" element in array"))
+        }
+        document.writeln("<h3 align=center><u> Displaying Array Elements</u></br></h3>")
+        for (let element of arr){
+            
+            document.writeln("<h3 align=center> "+element+"</br></h3>")
+            
+        }
+        const products=new Array("mobile","laptop","watch")//constructer
+        document.writeln("<h3 align=center> products Array length: "+products.length+"</br></h3>")
+        document.writeln("<h3 align=center> products Array Type: "+typeof products+"</br></h3>")
+        document.writeln("<h3 align=center> <u>products Array elements</u></br></h3>")
+        for(const som of products){
+            document.writeln("<h3 align=center>"+som+"</br></h3>")
+
+        }
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

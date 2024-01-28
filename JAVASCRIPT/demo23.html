@@ -1,0 +1,44 @@
+<html>
+<head>
+   
+    <title>JAVASCRIPT</title>
+    <script>
+        //demonstrate let const var
+        function demo1(){
+            document.writeln("<h3 align=center>I am in DEMO 1</br></h3>")
+            {
+                var a=10//function scope
+                document.writeln("<h3 align=center> Inside the block</br></h3>")
+                document.writeln("<h3 align=center>a = "+a+"</br></h3>")
+            }
+            document.writeln("<h3 align=center>a = "+a+"</br></h3>")
+        }
+        //demo1()//this is for var 
+        //demo2()//this is for let
+        demo3()//thi is for const
+        function demo2(){
+            document.writeln("<h3 align=center>I am in DEMO 2</br></h3>")
+            {
+                let a=10//it is a block scope
+                document.writeln("<h3 align=center> Inside the block</br></h3>")
+                document.writeln("<h3 align=center>a = "+a+"</br></h3>")//it is 10 declared in block scope
+            }
+            document.writeln("<h3 align=center>a = "+a+"</br></h3>")//it is not declared 
+
+        }
+        
+        function demo3(){
+            document.writeln("<h3 align=center>I am in DEMO 3</br></h3>")
+            {
+                const a=10//it is a block scope and it cant be changed
+                document.writeln("<h3 align=center> Inside the block</br></h3>")
+                document.writeln("<h3 align=center>a = "+a+"</br></h3>")
+            }
+            document.writeln("<h3 align=center>a = "+a+"</br></h3>")
+
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

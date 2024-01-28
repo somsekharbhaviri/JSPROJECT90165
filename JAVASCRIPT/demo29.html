@@ -1,0 +1,33 @@
+<html>
+<head>
+   
+    <title>JAVASCRIPT</title>
+    <script>
+        //map object - for each method
+        const mapobj1=new Map()
+        mapobj1.set("id",123)
+        mapobj1.set("name","klef")
+        mapobj1.set(1,100)
+        document.writeln("<h3 align=center>Map object 1 Size: "+mapobj1.size+"</br></h3>")
+        document.writeln("<h3 align=center><u>Display map object 1 based on values</u></br></h3>")
+        //if you give one argument for forEach then it takes as valuse
+        mapobj1.forEach( (v)=>{
+            document.writeln("<h3 align=center>"+v+"</br></h3>")
+        })
+        document.writeln("<h3 align=center><u>Display map object 1 based on keys and values</u></br></h3>")
+        //it was values,keys in forEach
+        mapobj1.forEach((v,k)=>{
+            document.writeln("<h3 align=center>"+k+":"+v+"</br></h3>")
+        })
+        const mapobj2=new Map([["id",123],["name","klef"]])//constructer - using new keyword and passing parameters
+        document.writeln("<h3 align=center>Map object 2 Size: "+mapobj2.size+"</br></h3>")
+        document.writeln("<h3 align=center><u>Display map object 2 based on values</u></br></h3>")
+        mapobj2.forEach((v)=>document.writeln("<h3 align=center>"+v+"</br></h3>"))
+        document.writeln("<h3 align=center><u>Display map object 2 based on key and values</u></br></h3>")
+        const view =(v,k)=>document.writeln("<h3 align=center>"+k+" : "+v+"</br></h3>")
+        mapobj2.forEach(view)//view is callback
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>JAVASCRIPT</title>
+    <script>
+       //map object - key value pair
+       const demomap =new Map()
+       demomap.set("id",101)//.set is to set the map
+       demomap.set("name","mswd")
+       demomap.set("age",34.5)
+       demomap.set("status",true)
+       demomap.set("name","klef")//duplicate key mswd changed into klef
+
+       document.writeln("<h3 align=center>Map Size: "+demomap.size+"</br></h3>")
+       document.writeln("<h3 align=center>Map Type: "+typeof demomap+"</br></h3>")
+
+
+       document.writeln("<h3 align=center>"+demomap.get("id")+"</br></h3>")//.get will return key"s value based on key
+       document.writeln("<h3 align=center>"+demomap.get("city")+"</br></h3>")//undefined
+
+       document.writeln("<h3 align=center>"+demomap.has("id")+"</br></h3>")//returns true if exsist else false
+       document.writeln("<h3 align=center>"+demomap.has("city")+"</br></h3>")//false cause it is not there
+
+       document.writeln("<h3 align=center> Deletion  : "+demomap.delete("status")+"</br></h3>")//delete the key and return true else return false
+       document.writeln("<h3 align=center>Map Size : "+demomap.size+"</br></h3>")//size reduced due to delete
+
+       document.writeln("<h3 align=center><u> Display Map keys</u></br></h3>")
+       for( const k of demomap.keys())
+       {
+        //keys will get the keys id,age,name
+        document.writeln("<h3 align=center>"+k+"</br></h3>")
+       }
+
+
+       document.writeln("<h3 align=center><u> Display Map values</u></br></h3>")
+       for( const v of demomap.values())
+       {
+        //values will get the values assigned keys id,age,name
+        document.writeln("<h3 align=center>"+v+"</br></h3>")
+       }
+
+
+
+       document.writeln("<h3 align=center><u> Display Map values based on keys</u></br></h3>")
+       for( const key of demomap.keys())
+       {
+        //values from passing keys
+        document.writeln("<h3 align=center>"+demomap.get(key)+"</br></h3>")
+       }
+
+
+
+       document.writeln("<h3 align=center><u> Display Map keys and values</u></br></h3>")
+       for( const [som,sekhar] of demomap.entries())
+       {
+        //values from passing keys
+        document.writeln("<h3 align=center>"+som+" : "+sekhar+"</br></h3>")
+       }
+       demomap.clear()//clears all the map and it cant be worked in document.writeln line
+       document.writeln("<h3 align=center>Map Size: "+demomap.size+"</br></h3>")
+
+    </script>
+</head>
+<body>
+</body>
+</html>

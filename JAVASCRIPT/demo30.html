@@ -1,0 +1,26 @@
+<html>
+<head>
+   
+    <title>JAVASCRIPT</title>
+    <script>
+        //map method is used to modify existing array with any specific opeartion individually
+        const arr1=[12,45,56,13,14,90]
+        document.writeln("<h3 align=center> Array arr1 ="+arr1+"</br></h3>")
+        const output1=arr1.map((element)=>(element*5))
+        document.writeln("<h3 align=center> output Array ="+output1+"</br></h3>")
+        //filter method used to provide modified array based on specific operation it will filter the elements
+        const arr2=[20,7,42,16,9,12,11,36]
+        document.writeln("<h3 align=center> Array arr2 ="+arr2+"</br></h3>")
+        const output2=arr2.filter((element)=>(element%2==1))
+        document.writeln("<h3 align=center> output Array ="+output2+"</br></h3>")
+        //reduce method it gives single results with all elements operation
+        const arr3=[5,8,3,7,9,2,-1]
+        //const output3=arr3.reduce(((sum,element)=>sum=sum+element),0) --> second way//sum is accumalator
+        const total=(sum,element)=>sum=sum+element
+        const output3=arr3.reduce(total)
+        document.writeln("<h3 align=center> output Array ="+output3+"</br></h3>")
+    </script>
+</head>
+<body>
+</body>
+</html>

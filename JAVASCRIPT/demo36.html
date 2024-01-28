@@ -1,0 +1,30 @@
+<html>
+<head>
+   
+    <title>JAVASCRIPT</title>
+    <script>
+        //parameterized constructor
+        class Student
+        {
+            constructor(id,category,name,cost){
+                this.pid=id
+                this.pcategory=category
+                this.pname=name
+                this.pcost=cost
+            }
+            display(){
+                document.writeln(`<h3 align='center'><b>Product id : ${this.pid}</br>Product category : ${this.pcategory}</br>Product name : ${this.pname}</br> Product cost : ${this.pcost}</b></br></h3>`)
+            }
+
+        }
+        let p1=new Student(101,"mobiles","iphone",56000.00)//s1 is a object of student class
+        p1.display()
+        let p2=new Student(101,"clothes","saree",2000.00)//s2 is a object of student class
+        p2.display()
+       
+       
+    </script>
+</head>
+<body>
+</body>
+</html>
